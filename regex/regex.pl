@@ -1,3 +1,9 @@
+# NOTE - Branch reset group is supported by Perl, PHP, Delphi and R.
+# (?|regex)
+# A branch reset group consists of alternations and capturing groups. (?|(regex1)|(regex2))
+# Alternatives in branch reset group share same capturing group.
+
+
 # Your task is to write a regex which will match , with following condition(s):
 # consists of 8 digits.
 # must have "---", "-", "." or ":" separator such that string  gets divided in  parts, with each part having exactly two digits.
