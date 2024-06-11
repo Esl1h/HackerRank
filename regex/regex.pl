@@ -12,3 +12,17 @@ if($Test_String =~ /$Regex_Pattern/){
 } else {
 		print "false";
 }
+# \1 matches the same text as most recently matched by the 1st capturing group
+
+
+# consists of tic or tac.
+# tic should not be immediate neighbour of itself.
+# The first tic must occur only when tac has appeared at least twice before.
+
+$Regex_Pattern = '^(\2tic|(tac))+$';
+$Test_String = <STDIN> ;
+if($Test_String =~ /$Regex_Pattern/){
+		print "true";
+} else {
+		print "false";
+}
